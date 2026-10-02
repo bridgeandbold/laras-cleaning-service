@@ -155,6 +155,7 @@ section{padding:84px 0;scroll-margin-top:78px}
 .card:nth-child(2){border-top-color:var(--navy)}
 .card:nth-child(3){border-top-color:var(--grass)}
 .card:nth-child(4){border-top-color:var(--orange)}
+.card-img{display:block;width:calc(100% + 44px);max-width:none;margin:-26px -22px 22px;aspect-ratio:4/3;object-fit:cover;background:var(--line)}
 .card h3{font-size:21px}
 .card ul{list-style:none;padding:0;margin:16px 0 0}
 .card li{font-size:15px;color:#42597A;padding-left:22px;position:relative;margin-bottom:9px;line-height:1.4}
@@ -187,6 +188,10 @@ section{padding:84px 0;scroll-margin-top:78px}
 .step h3{font-size:22px;margin-bottom:10px}
 .step p{color:#42597A;font-size:16px}
 @media(max-width:800px){.steps{grid-template-columns:1fr;gap:26px}}
+.photo-wide{margin:40px 0 0;position:relative}
+.photo-wide img{width:100%;aspect-ratio:21/8;object-fit:cover;object-position:center 40%;border-radius:4px;box-shadow:var(--shadow);background:var(--line)}
+.photo-wide figcaption{position:absolute;left:18px;bottom:18px;background:var(--navy);color:#fff;font-size:14px;font-weight:500;padding:9px 14px;border-radius:3px;max-width:calc(100% - 36px)}
+@media(max-width:700px){.photo-wide img{aspect-ratio:4/3}.photo-wide figcaption{position:static;margin-top:12px;background:none;color:var(--muted);padding:0}}
 
 /* area */
 .area{background:#fff}
@@ -352,6 +357,7 @@ footer a:hover{color:#fff;text-decoration:underline}
     </div>
     <div class="clean-grid reveal">
       <div class="card">
+        <img class="card-img" src="images/kitchen-real.jpg" width="1000" height="1333" loading="lazy" decoding="async" alt="A bright, freshly cleaned kitchen with white cabinets, a long island and gleaming hardwood floors">
         <h3>Kitchen</h3>
         <ul>
           <li>Counters and backsplash wiped down</li>
@@ -362,6 +368,7 @@ footer a:hover{color:#fff;text-decoration:underline}
         </ul>
       </div>
       <div class="card">
+        <img class="card-img" src="images/bathroom.jpg" width="1376" height="768" loading="lazy" decoding="async" alt="A sparkling clean bathroom with white tile and polished fixtures">
         <h3>Bathrooms</h3>
         <ul>
           <li>Tub, shower and tile scrubbed</li>
@@ -372,6 +379,7 @@ footer a:hover{color:#fff;text-decoration:underline}
         </ul>
       </div>
       <div class="card">
+        <img class="card-img" src="images/bedroom-real.jpg" width="1000" height="1333" loading="lazy" decoding="async" alt="A tidy bedroom with a neatly made pink bed and a fluffy white rug">
         <h3>Bedrooms</h3>
         <ul>
           <li>Dusting, including shelves and frames</li>
@@ -382,6 +390,7 @@ footer a:hover{color:#fff;text-decoration:underline}
         </ul>
       </div>
       <div class="card">
+        <img class="card-img" src="images/living-real.jpg" width="1000" height="1333" loading="lazy" decoding="async" style="object-position:center 30%" alt="A polished marble sideboard with a gold mirror and candles, wiped clean and streak-free">
         <h3>Living areas</h3>
         <ul>
           <li>All surfaces dusted</li>
@@ -419,6 +428,10 @@ footer a:hover{color:#fff;text-decoration:underline}
       <p class="eyebrow">How it works</p>
       <h2>Three steps, and nothing to sign.</h2>
     </div>
+    <figure class="photo-wide reveal">
+      <img src="images/at-work.jpg" width="1376" height="768" loading="lazy" decoding="async" alt="A cleaner wiping down a kitchen counter, with a caddy of cleaning supplies beside her">
+      <figcaption>We bring the supplies. You come home to a clean house.</figcaption>
+    </figure>
     <div class="steps reveal">
       <div class="step">
         <h3>You tell us about the house</h3>
